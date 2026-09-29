@@ -5,31 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  server: 185.22.154.239
-  port: 40101
+  server: 47.244.120.197
+  port: 23026
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  server: 47.238.210.5
-  port: 13779
+  server: b9bccf5a-tmeqo0-0-1jcwu.hk3.hyhuawei.com
+  port: 443
   udp: true
-  type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  tls: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
-  client-fingerprint: ios
+  type: hysteria2
+  password: f93486ce-cc84-11ed-9e98-f23c913c8d2b
+  sni: b9bccf5a-tmeqo0-0-1jcwu.hk3.hyhuawei.com
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: 202.146.222.174
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   server: 202.146.222.89
@@ -37,20 +37,9 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
+  sni: https%253a%252f%252ft.me%252fclashv8%25f0%259f%2587%25a8%25f0%259f%2587%25b3
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
-  server: champion.xn--kivt58h.lol
-  port: 80
-  udp: true
-  type: vless
-  uuid: b5af4a3d-f525-43aa-9cc3-de1ba437e4ed
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ak.mcdonaldshamburgergoodgoodgood.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
   server: hk-1.gsafevpnapi.com
   port: 20270
   udp: true
@@ -63,20 +52,51 @@ proxies:
     short-id: d5b538acf8a93540
   servername: www.yahoo.com
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+  server: 47.240.80.220
+  port: 2052
+  udp: true
+  type: trojan
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  sni: vpn.12169.top
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
-  server: 47.239.6.251
-  port: 13779
+  server: 185.22.154.239
+  port: 40101
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2🇨🇳
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
+  server: hk2.xiaoliyu.cyou
+  port: 4433
+  udp: true
+  type: hysteria2
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: hk2.xiaoliyu.cyou
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
+  server: 47.83.143.75
+  port: 443
   udp: true
   type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  uuid: 1658f804-41bf-4b7c-a0be-ba01097e0f41
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
-  client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
+    public-key: Y9TEgB_8YVWzv8-wblXBjeX2t7IAtQhtQ3pE08gfNWw
+    short-id: 862266ae05b7a62f
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
   server: 194.99.79.26
   port: 443
   udp: true
@@ -90,47 +110,61 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
-  server: 2.27.109.179
-  port: 45464
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
+  server: hk01.kfc-520.com
+  port: 60001
   udp: true
-  type: trojan
-  password: XuMweB2PWs
-  sni: 2.27.109.179.sslip.io
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
-  server: hk2.xiaoliyu.cyou
-  port: 4433
+  type: hysteria2
+  password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
+  sni: hk01.kfc-520.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - xiaohe
+  server: ru1.xiaoliyu.cyou
+  port: 18333
   udp: true
   type: hysteria2
   password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: hk2.xiaoliyu.cyou
+  sni: ru1.xiaoliyu.cyou
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
-  server: 45.82.244.40
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - xiaohe
+  server: 47.238.210.5
+  port: 13779
   udp: true
   type: vless
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
   tls: true
-  servername: hk.152568.xyz
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: ios
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - xiaohe
+  server: 47.239.6.251
+  port: 13779
+  udp: true
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 16 - xiaohe
+  server: i2psm3knof5qjjix.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: i2psm3knof5qjjix.v.3dns.vip
   skip-cert-verify: false
-  client-fingerprint: edge
   network: ws
   ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: hk.152568.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
-  server: nas.aizhzo.com
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: 127.0.0.1
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+    path: /ws-vmess
 proxy-groups:
 - name: PROXIES
   type: select
@@ -148,6 +182,10 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 13 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 14 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 15 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 16 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -165,5 +203,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 13 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 14 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 15 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 16 - xiaohe
 rules:
 - MATCH,PROXIES
