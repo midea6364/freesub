@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "172.67.216.233",
+      "tag": "🇵🇹 葡萄牙 (Portugal) 01 - xiaohe",
+      "server": "31.129.22.141",
       "server_port": 443,
-      "uuid": "23e34376-aa47-4c8d-97ea-02915e01fcca",
+      "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "j3bx1s9mk2sylw66yj-hsk.tjsjrkk8gbhts0q5-0os.workers.dev",
-        "insecure": false,
+        "server_name": "pt-root.sworkingvpn.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/uwojyr8LT2gMeHnQJVf2HntOGHsvRH3",
-        "headers": {
-          "Host": "j3bx1s9mk2sylw66yj-hsk.tjsjrkk8gbhts0q5-0os.workers.dev"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
+          "short_id": "15bcc0a77c3cacdf"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇵🇹 葡萄牙 (Portugal) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇵🇹 葡萄牙 (Portugal) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
